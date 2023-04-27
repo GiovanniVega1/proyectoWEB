@@ -1,3 +1,7 @@
+body {
+    background-color: #D8D1B1;
+}
+
 .form-login {
     display: grid;
     width: 15em;
