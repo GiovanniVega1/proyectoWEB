@@ -1,42 +1,45 @@
 body {
-    background-color: #D8D1B1;
+	background-color: #D8D1B1;
+	position: relative;
+	padding-bottom: 15px;
+	min-height: 100vh;
 }
 
 .form-login {
-    display: grid;
-    width: 15em;
-    margin: auto;
+	display: grid;
+	width: 15em;
+	margin: auto;
 }
 
 .form-register {
-    display: grid;
-    width: 15em;
-    margin: auto;
+	display: grid;
+	width: 15em;
+	margin: auto;
 }
 
 .btn {
-    cursor: pointer;
-    border: none;
-    margin-top: 1em;
-    background-color: #82E0AA;
-    border-radius: 10%;
-    height: 2em;
+	cursor: pointer;
+	border: none;
+	margin-top: 1em;
+	background-color: #555c75;
+	border-radius: 10%;
+	height: 2em;
 }
 
 .btn:hover {
-    background-color: #82E0CF;
-}
+	background-color: #82E0CF;
+}				
 
-.bienvenida{
-	margin : auto;
+.bienvenida {
+	margin: auto;
 	float: center;
 }
 
-.main{
+.main {
 	padding-top: 10rem;
 }
 
-.section{
+.section {
 	background: #70b57880;
 	margin-top: 10px;
 	margin-left: 100px;
@@ -45,24 +48,27 @@ body {
 	float: center;
 }
 
-.footer{
-	background: #70b57880;
+.footer {
+	background: #0d375380;
 	padding: 5px;
 	clear: both;
 	margin-top: 10px;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
 }
 
-.container{
+.container {
 	width: 85%;
 	max-width: 850;
 	margin: 0 auto;
 }
 
-.header .container{
+.header .container {
 	width: 90%;
 }
 
-.header{
+.header {
 	background: #70b57880;
 	color: white;
 
@@ -77,74 +83,86 @@ body {
 	text-decoration: none;
 }
 
-.logo-nav-container{
+.logo-nav-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.logo{
+.logo {
 	position: relative;
 }
 
-.navigation ul{
+.navigation ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-.navigation > ul > li{
+.navigation>ul>li {
 	position: relative;
 	display: inline-block;
 }
 
-.navigation ul li a{
+.navigation ul li a {
 	display: block;
 	padding: 0.5rem 1rem;
 	transition: all 0.4s linear;
 	border-radius: 5px;
 }
 
-.navigation ul li a:hover{
+.navigation ul li a:hover {
 	background: #70b578;
 }
 
-.submenu{
+.submenu {
 	position: absolute;
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity 1.5s;
 }
 
-.navigation li:hover .submenu{
+.navigation li:hover .submenu {
 	visibility: visible;
 	opacity: 1;
 }
 
-h1{
+h1 {
 	font-weight: 400;
 	text-align: center;
 	padding: 20px 0;
 	font-size: 40px;
-	
+
 }
 
-h2{
+h2 {
 	text-align: center;
 }
 
-h3{
+h3 {
 	text-align: center;
 }
 
-.linea{
+.linea {
 	background: #550b51;
 	height: 5px;
 	width: 100%;
 	display: block;
 }
+.contenedorTexto{
+	width: 100%;
+	background-color: #5787a3;
+	display: block;
+	border-radius: 2em;
+	
+}
+.texto{
+	font-family: monospace;
+	font-size: 32px;
+	padding: 3px;
+}
 
-.galeria{
+.galeria {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 	width: 95%;
@@ -154,14 +172,26 @@ h3{
 	overflow: hidden;
 }
 
-.galeria > a{
+.imagenPrincipal{
+	display: block;
+	margin: auto;
+	width: 50%;
+}
+.imagenSecundaria{
+	display: block;
+	margin: auto;
+	width: 40%;
+	padding-bottom: 25px;
+	
+}
+.galeria>a {
 	display: block;
 	position: relative;
 	overflow: hidden;
-	box-shadow: 0 0 6px rgba(0,0,0,.5);
+	box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
 
-.galeria img{
+.galeria img {
 	width: 100%;
 	vertical-align: top;
 	height: 300px;
@@ -169,12 +199,12 @@ h3{
 	transition: transform 0.5s;
 }
 
-.galeria a:hover img{
+.galeria a:hover img {
 	filter: blur(1px);
 	transform: rotate(10deg) scale(1.3);
 }
 
-.light-box{
+.light-box {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -189,23 +219,23 @@ h3{
 	transform: scale(0);
 }
 
-.light-box:img{
+.light-box:img {
 	width: 75vw;
 	max-height: 70vh;
 }
 
-.light-box:target{
+.light-box:target {
 	transform: scale(1);
 }
 
-.descripcion{
+.descripcion {
 	position: absolute;
 	margin-top: 500px;
 	width: 600px;
 	background: #ffffff;
 }
 
-.cerrar{
+.cerrar {
 	display: block;
 	position: absolute;
 	top: 40px;
@@ -219,7 +249,7 @@ h3{
 	border-radius: 50%;
 }
 
-.siguiente{
+.siguiente {
 	display: block;
 	color: #fff;
 	height: 50px;
@@ -228,54 +258,54 @@ h3{
 	text-decoration: none;
 }
 
-.titulo{
-    text-decoration: rgb(211, 40, 111);
-    font-size: 60px;
-    font-family: 'Dancing Script', cursive;
-    margin-bottom: 40px;
-    color: rgb(0, 143, 57);
+.titulo {
+	text-decoration: rgb(211, 40, 111);
+	font-size: 60px;
+	font-family: 'Dancing Script', cursive;
+	margin-bottom: 40px;
+	color: rgb(0, 143, 57);
 }
 
-.show_btn{
+.show_btn {
 	background: #fff;
 	padding: 10px 20px;
 	font-size: 20px;
 	font-weight: 500;
 	color: #70b578;
 	cursor: pointer;
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-.show_btn{
+.show_btn {
 	position: relative;
 	bottom: 1000px;
 	left: 100px;
 }
 
-.cont_login{
+.cont_login {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
 	display: none;
 }
 
-.cont_login{
+.cont_login {
 	display: none;
 	background: #fff;
 	width: 410px;
 	padding: 30px;
-	box-shadow: 0 0 8px rgba(0,0,0,0.3);
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
-#show:checked ~ .cont_login{
+#show:checked~.cont_login {
 	display: block;
 }
 
-.cont_login .close_btn{
+.cont_login .close_btn {
 	display: block;
 	position: relative;
 	bottom: 25px;
@@ -290,32 +320,32 @@ input[type="checkbox"]{
 	cursor: pointer;
 }
 
-.cont_login .close_btn:hover{
+.cont_login .close_btn:hover {
 	color: #70b578;
 
 }
 
-.cont_login .text{
+.cont_login .text {
 	font-size: 35px;
 	font-weight: 600;
 	text-align: center;
 }
 
-.cont_login form{
+.cont_login form {
 	margin-top: -20px;
 }
 
-.cont_login form .data{
+.cont_login form .data {
 	height: 45px;
 	width: 100%;
 	margin: 40px 0;
 }
 
-form .data label{
+form .data label {
 	font-size: 18px;
 }
 
-form .data input{
+form .data input {
 	height: 100%;
 	width: 100%;
 	padding-left: 10px;
@@ -323,25 +353,25 @@ form .data input{
 	border: 1px solid silver;
 }
 
-form .data input:focus{
+form .data input:focus {
 	border-color: #70b578;
 	border-bottom-width: 6px;
 }
 
-form .forgot_pass{
+form .forgot_pass {
 	margin-top: -8px;
 }
 
-form .forgot_pass a{
+form .forgot_pass a {
 	color: #70b578;
 	text-decoration: none;
 }
 
-form .forgot_pass a:hover{
+form .forgot_pass a:hover {
 	text-decoration: underline;
 }
 
-form .btn{
+form .btn {
 	margin: 30px 0;
 	height: 45px;
 	width: 100%;
@@ -349,7 +379,7 @@ form .btn{
 	overflow: hidden;
 }
 
-form .btn .inner{
+form .btn .inner {
 	height: 100%;
 	width: 300%;
 	position: absolute;
@@ -359,11 +389,11 @@ form .btn .inner{
 	transition: all 0.4s;
 }
 
-form .btn:hover .inner{
+form .btn:hover .inner {
 	left: 0;
 }
 
-form .btn button{
+form .btn button {
 	height: 100%;
 	width: 100%;
 	background: none;
@@ -376,15 +406,15 @@ form .btn button{
 	cursor: pointer;
 }
 
-form .singup_link{
+form .singup_link {
 	text-align: center;
 }
 
-form .singup_link a{
+form .singup_link a {
 	color: #70b578;
 	text-decoration: none;
 }
 
-form .singup_link a:hover{
+form .singup_link a:hover {
 	text-decoration: underline;
 }
