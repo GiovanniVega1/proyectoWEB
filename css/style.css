@@ -4,7 +4,14 @@ body {
 	padding-bottom: 15px;
 	min-height: 100vh;
 }
-
+.footer {
+	background: #0d375380;
+	clear: both;
+	margin-top: 10px;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
 .form-login {
 	display: grid;
 	width: 15em;
