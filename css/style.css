@@ -1,38 +1,41 @@
 body {
-    background-color: #D8D1B1;
+	background-color: #D8D1B1;
+	position: relative;
+	padding-bottom: 15px;
+	min-height: 100vh;
 }
 
 .form-login {
-    display: grid;
-    width: 15em;
-    margin: auto;
+	display: grid;
+	width: 15em;
+	margin: auto;
 }
 
 .form-register {
-    display: grid;
-    width: 15em;
-    margin: auto;
+	display: grid;
+	width: 15em;
+	margin: auto;
 }
 
 .btn {
-    cursor: pointer;
-    border: none;
-    margin-top: 1em;
-    background-color: #82E0AA;
-    border-radius: 10%;
-    height: 2em;
+	cursor: pointer;
+	border: none;
+	margin-top: 1em;
+	background-color: #555c75;
+	border-radius: 10%;
+	height: 2em;
 }
 
 .btn:hover {
-    background-color: #82E0CF;
-}
+	background-color: #82E0CF;
+}				
 
-.bienvenida{
-	margin : auto;
+.bienvenida {
+	margin: auto;
 	float: center;
 }
 
-.main{
+.main {
 	padding-top: 10rem;
 }
 
@@ -41,25 +44,37 @@ h1{
 	text-align: center;
 	padding: 20px 0;
 	font-size: 40px;
-	
+
 }
 
-h2{
+h2 {
 	text-align: center;
 }
 
-h3{
+h3 {
 	text-align: center;
 }
 
-.linea{
+.linea {
 	background: #550b51;
 	height: 5px;
 	width: 100%;
 	display: block;
 }
+.contenedorTexto{
+	width: 100%;
+	background-color: #5787a3;
+	display: block;
+	border-radius: 2em;
+	
+}
+.texto{
+	font-family: monospace;
+	font-size: 32px;
+	padding: 3px;
+}
 
-.galeria{
+.galeria {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 	width: 95%;
@@ -69,14 +84,26 @@ h3{
 	overflow: hidden;
 }
 
-.galeria > a{
+.imagenPrincipal{
+	display: block;
+	margin: auto;
+	width: 50%;
+}
+.imagenSecundaria{
+	display: block;
+	margin: auto;
+	width: 40%;
+	padding-bottom: 25px;
+	
+}
+.galeria>a {
 	display: block;
 	position: relative;
 	overflow: hidden;
-	box-shadow: 0 0 6px rgba(0,0,0,.5);
+	box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
 
-.galeria img{
+.galeria img {
 	width: 100%;
 	vertical-align: top;
 	height: 300px;
@@ -84,12 +111,12 @@ h3{
 	transition: transform 0.5s;
 }
 
-.galeria a:hover img{
+.galeria a:hover img {
 	filter: blur(1px);
 	transform: rotate(10deg) scale(1.3);
 }
 
-.light-box{
+.light-box {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -104,23 +131,23 @@ h3{
 	transform: scale(0);
 }
 
-.light-box:img{
+.light-box:img {
 	width: 75vw;
 	max-height: 70vh;
 }
 
-.light-box:target{
+.light-box:target {
 	transform: scale(1);
 }
 
-.descripcion{
+.descripcion {
 	position: absolute;
 	margin-top: 500px;
 	width: 600px;
 	background: #8C8888;
 }
 
-.cerrar{
+.cerrar {
 	display: block;
 	position: absolute;
 	top: 40px;
@@ -134,7 +161,7 @@ h3{
 	border-radius: 50%;
 }
 
-.siguiente{
+.siguiente {
 	display: block;
 	color: #fff;
 	height: 50px;
@@ -143,25 +170,25 @@ h3{
 	text-decoration: none;
 }
 
-.titulo{
-    text-decoration: rgb(211, 40, 111);
-    font-size: 60px;
-    font-family: 'Dancing Script', cursive;
-    margin-bottom: 40px;
-    color: rgb(0, 143, 57);
+.titulo {
+	text-decoration: rgb(211, 40, 111);
+	font-size: 60px;
+	font-family: 'Dancing Script', cursive;
+	margin-bottom: 40px;
+	color: rgb(0, 143, 57);
 }
 
-.show_btn{
+.show_btn {
 	background: #fff;
 	padding: 10px 20px;
 	font-size: 20px;
 	font-weight: 500;
 	color: #70b578;
 	cursor: pointer;
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-.show_btn{
+.show_btn {
 	position: relative;
 	bottom: 1000px;
 	left: 100px;
