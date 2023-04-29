@@ -8,6 +8,12 @@ body {
     margin: auto;
 }
 
+.form-register {
+    display: grid;
+    width: 15em;
+    margin: auto;
+}
+
 .btn {
     cursor: pointer;
     border: none;
@@ -21,7 +27,10 @@ body {
     background-color: #82E0CF;
 }
 
-
+.bienvenida{
+	margin : auto;
+	float: center;
+}
 
 .main{
 	padding-top: 10rem;
@@ -117,6 +126,7 @@ h1{
 	text-align: center;
 	padding: 20px 0;
 	font-size: 40px;
+	
 }
 
 h2{
