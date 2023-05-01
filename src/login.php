@@ -28,7 +28,7 @@
             if( $resultado->num_rows ) {
             $usuario = mysqli_fetch_assoc($resultado);
                 if ($usuario['contrasena'] == $contrasena) {
-                    $exitos[] = "El usuario a sido autenticado con exito";
+                    $exitos[] = "El usuario ha sido autenticado con exito";
                     $resultado = $_GET['resultado'] ?? null;
                 } else {
                     $errores[] = "El usuario o la contraseña son incorrectos";
