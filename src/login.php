@@ -1,3 +1,45 @@
+<?php 
+    $db = mysqli_connect('localhost', 'root', '', 'hotel');
+
+    if(!$db) {
+        echo "Error en la conexion";
+    }
+
+    $errores = [];
+    $exitos = [];
+
+    if($_SERVER['REQUEST_METHOD'] === 'POST'){
+
+        $correo = mysqli_real_escape_string( $db ,filter_var( $_POST['correo'], FILTER_VALIDATE_EMAIL));
+        $contrasena = mysqli_real_escape_string( $db ,$_POST['contrasena']);
+
+        if(!$correo) {
+            $errores[] = "El email es obligatorio o no es valido";
+        }
+
+        if(!$contrasena) {
+            $errores[] = "La contraseña es obligatoria";
+        }
+
+        if(empty($errores)) {
+            $query = "SELECT * FROM usuarios WHERE correo = '$correo' ";
+            $resultado = mysqli_query($db, $query);
+
+            if( $resultado->num_rows ) {
+            $usuario = mysqli_fetch_assoc($resultado);
+                if ($usuario['contrasena'] == $contrasena) {
+                    $exitos[] = "El usuario a sido autenticado con exito";
+                    $resultado = $_GET['resultado'] ?? null;
+                } else {
+                    $errores[] = "El usuario o la contraseña son incorrectos";
+                }
+            } else {
+                $errores[] = "El usuario no existe";
+            }
+        }
+
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +54,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <title>Login</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -43,9 +85,6 @@
                     <li>
                         <a class="nav-link" href="consultar_reservaciones.php">Consultar Reservaciones</a>
                     </li>
-                    <li>
-                        <a class="nav-link" href="hacer_reservacion.php">Generar reservacion</a>
-                    </li>
                 </ul>
                 <hr class="text-white-50">
 
@@ -56,12 +95,22 @@
         </div>
     </nav>
 
-    <form class="form-login">
+    <form class="form-login" method="POST">
+        <?php foreach($errores as $error): ?>
+            <div class="alerta_error">
+                <?php echo $error; ?>
+            </div>
+        <?php endforeach; ?>
+        <?php foreach($exitos as $exito): ?>
+            <div class="alerta_exito">
+                <?php echo $exito; ?>
+            </div>
+        <?php endforeach; ?>
         <label for="name">Correo</label>
-        <input type="email" placeholder="Correo" id="email-login">
+        <input type="email" placeholder="Correo" id="email-login" name="correo">
         <br>
         <label for="password">Contraseña</label>
-        <input type="text" placeholder="Contraseña" id="password-login">
+        <input type="password" placeholder="password" id="password-login" name="contrasena">
         <br>
         <input type="submit" value="Ingresar" id="btn-login" class="btn">
 

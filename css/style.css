@@ -207,3 +207,36 @@ h3 {
 	
 }
 
+.alerta_error {
+	background-color: rgb(189, 7, 7);
+	padding: .5rem;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 1rem 0;
+}
+
+.alerta_exito {
+	background-color: rgb(44, 238, 118);
+	padding: .5rem;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 1rem 0;
+}
+
+
+
+.tabla_usuarios {
+	margin-top: 1em;
+	width: 100%;
+	border-spacing: 0;
+	border: 1px solid black;
+}
+
+.tabla_usuarios thead, th, tr, td {
+	padding: 2em;
+	border: 1px solid black;
+}
