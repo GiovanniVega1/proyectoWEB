@@ -74,7 +74,7 @@
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav me-auto">
                     <li class="navbar-iten">
-                        <a class="nav-link active" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="#">Inicio</a>
                     </li>
                     <li class="navbar-iten">
                         <a class="nav-link" href="galeria.html">Galeria</a>
@@ -84,6 +84,21 @@
                     </li>
                     <li>
                         <a class="nav-link" href="consultar_reservaciones.php">Consultar Reservaciones</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="hacer_reservacion.php">Generar reservacion</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="contacto.php">Contacto</a>
+                    </li>
+                    <li>
+                        <a class="nav-link active" href="login.php">Iniciar sesion</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="Registrar.php">Registro</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="tabla_usuarios.php">Usuarios</a>
                     </li>
                 </ul>
                 <hr class="text-white-50">
