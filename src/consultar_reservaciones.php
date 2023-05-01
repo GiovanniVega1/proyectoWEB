@@ -50,7 +50,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
                 <i class="bi bi-house-door-fill"></i>
-                <span class="text-warning">Intelio</span>
+                <span class="text-warning">MH</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -66,6 +66,9 @@
                     </li>
                     <li class="navbar-iten">
                         <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li>
+                        <a class="nav-link active" href="consultar_reservaciones.php">Consultar Reservaciones</a>
                     </li>
                 </ul>
                 <hr class="text-white-50">
