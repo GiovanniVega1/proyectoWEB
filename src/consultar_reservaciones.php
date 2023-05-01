@@ -70,6 +70,9 @@
                     <li>
                         <a class="nav-link active" href="consultar_reservaciones.php">Consultar Reservaciones</a>
                     </li>
+                    <li>
+                    <a class="nav-link" href="hacer_reservacion.php">Generar reservacion</a>
+                    </li>
                 </ul>
                 <hr class="text-white-50">
 
