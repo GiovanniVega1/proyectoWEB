@@ -34,7 +34,7 @@
             $enviar = mysqli_query($db, $query);
 
             if ($enviar) {
-                header('location: login.php?resultado=1');
+                header('location: tabla_usuarios.php?resultado=1');
             }
         }
     }
