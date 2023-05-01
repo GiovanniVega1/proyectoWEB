@@ -200,3 +200,9 @@ h3 {
 	bottom: 1000px;
 	left: 100px;
 }
+
+.table td, tr,th{
+	border: 2px solid black;
+    border-collapse: collapse;
+	
+}
