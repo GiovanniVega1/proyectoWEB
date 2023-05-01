@@ -115,7 +115,7 @@ if (isset($_POST['submit'])) {
       <label>Comentarios:</label>
       <textarea name="comentarios"></textarea><br>
 
-      <input type="submit" name="submit" value="Enviar">
+      <input type="submit" name="submit" value="Enviar" class="btn">
     </form>
 
     <footer class="footer">Derechos reservados. Las montañas del himalaya es una franquicia internacional. Queda prohibido cualquier tipo de venta fuera de nuestra pagina oficial.</footer>
