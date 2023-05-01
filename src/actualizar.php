@@ -94,6 +94,24 @@
                     <li class="navbar-iten">
                         <a class="nav-link" href="servicios.html">Servicios</a>
                     </li>
+                    <li>
+                        <a class="nav-link" href="consultar_reservaciones.php">Consultar Reservaciones</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="hacer_reservacion.php">Generar reservacion</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="src/contacto.php">Contacto</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="login.php">Iniciar sesion</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="Registrar.php">Registro</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="tabla_usuarios.php">Usuarios</a>
+                    </li>   
                 </ul>
                 <hr class="text-white-50">
 

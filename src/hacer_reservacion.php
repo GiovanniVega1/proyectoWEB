@@ -78,6 +78,18 @@
                     <li>
                     <a class="nav-link active" href="#">Generar reservacion</a>
                     </li>
+                    <li>
+                        <a class="nav-link" href="contacto.php">Contacto</a>
+                    </li>   
+                    <li>
+                        <a class="nav-link" href="login.php">Iniciar sesion</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="Registrar.php">Registro</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="tabla_usuarios.php">Usuarios</a>
+                    </li>
                 </ul>
                 <hr class="text-white-50">
 
