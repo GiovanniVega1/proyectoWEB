@@ -24,7 +24,6 @@ if (isset($_POST['submit'])) {
   $sql = "INSERT INTO comentarios (nombre, descripcion, email, telefono) VALUES ('$nombre', '$comentarios', '$correo', '$telefono')";
 
   if (mysqli_query($conexion, $sql)) {
-    echo "Los datos han sido guardados correctamente";
   } else {
     echo "Error al guardar los datos: " . mysqli_error($conexion);
   }
@@ -103,7 +102,7 @@ if (isset($_POST['submit'])) {
         </div>
     </nav>  
     <h2>Formulario de contacto</h2>
-    <form method="post" action="contacto.php">
+    <form class="form-register" method="post" action="contacto.php">
       <label>Nombre:</label>
       <input type="text" name="nombre"><br>
 
