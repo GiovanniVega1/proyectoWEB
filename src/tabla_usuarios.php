@@ -63,7 +63,7 @@
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav me-auto">
                     <li class="navbar-iten">
-                        <a class="nav-link active" href="#">Inicio</a>
+                        <a class="nav-link active" href="../index.html">Inicio</a>
                     </li>
                     <li class="navbar-iten">
                         <a class="nav-link" href="galeria.html">Galeria</a>
