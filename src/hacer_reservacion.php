@@ -10,7 +10,7 @@
     if (!$conn) {
         die("Error en la conexión: " . mysqli_connect_error());
     }
-    
+        
     $sql = "SELECT *FROM usuarios";
     $usuarios = mysqli_query($conn,$sql);
 
