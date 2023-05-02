@@ -1,5 +1,7 @@
 <?php
 // Verificamos si se ha enviado el formulario
+
+$resultados = $_GET['resultado'] ?? null;
 if (isset($_POST['submit'])) {
 
   $servername = "localhost"; //El servidor que se usa para la base de datos
@@ -24,6 +26,7 @@ if (isset($_POST['submit'])) {
   $sql = "INSERT INTO comentarios (nombre, descripcion, email, telefono) VALUES ('$nombre', '$comentarios', '$correo', '$telefono')";
 
   if (mysqli_query($conexion, $sql)) {
+    header('location: contacto.php?resultado=1');
   } else {
     echo "Error al guardar los datos: " . mysqli_error($conexion);
   }
@@ -102,6 +105,9 @@ if (isset($_POST['submit'])) {
         </div>
     </nav>  
     <h2>Formulario de contacto</h2>
+    <?php if( intval($resultados) === 1): ?>
+                <p class="alerta_exito">Gracias por tus comentarios</p>
+            <?php endif; ?>
     <form class="form-register" method="post" action="contacto.php">
       <label>Nombre:</label>
       <input type="text" name="nombre"><br>
